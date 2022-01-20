@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 const routes: RouteConfig[] = [
     {
-      path: '/',
+      path: '/todo',
       component: TaskList,
     }
 ]

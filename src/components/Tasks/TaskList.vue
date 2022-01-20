@@ -1,7 +1,6 @@
 <template>
   <v-card class="tasks">
     <v-app-bar
-      color="#6A76AB"
       dark
       shrink-on-scroll
       prominent
@@ -13,7 +12,8 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+          gradient="to top right, rgba(100,100,100,.6), rgba(100,100,100,.6)"
+          style="filter: blur(1px);"
         ></v-img>
       </template>
 
@@ -31,7 +31,7 @@
         :details="null"
       ></v-text-field>
       <v-btn
-        color="#00897B"
+        color="var(--color-green)"
         height="40"
         class="ml-1"
         @click="addTask"
@@ -42,7 +42,7 @@
       </template>
     </v-app-bar>
     <v-progress-linear
-      color="#00897B"
+      color="var(--color-green)"
       class="mb-2"
       :indeterminate="isLoading"
       reverse
@@ -62,7 +62,7 @@
     <v-card-actions class="pb-0">
       <v-tabs
         v-model="favorites"
-        color="#00897B"
+        color="var(--color-green)"
       >
         <v-tab>All</v-tab>
         <v-tab>Favorites</v-tab>

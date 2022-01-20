@@ -3,7 +3,7 @@
   <v-checkbox
     class="ma-2 pa-0"
     hide-details
-    color="#00897B"
+    color="var(--color-green)"
     :input-value="isDone"
         value
     @change="switchDone"
