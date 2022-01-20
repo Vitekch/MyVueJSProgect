@@ -13,7 +13,7 @@
         <v-img
           v-bind="props"
           gradient="to top right, rgba(100,100,100,.6), rgba(100,100,100,.6)"
-          style="filter: blur(1px);"
+          style="filter: blur(2px); transform: scale(1.2)"
         ></v-img>
       </template>
 
