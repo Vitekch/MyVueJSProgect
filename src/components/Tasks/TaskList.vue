@@ -123,7 +123,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
   .tasks{
-    width: 25%;
+    width: 50%;
     &-list{
       max-height: 500px;
       overflow: auto;
